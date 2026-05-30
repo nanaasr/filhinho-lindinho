@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+  background-color: #4E8AD9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+  background-color: #A6D1FF;
+  padding: 30px;
+  border-radius: 16px;
+  width: 450px;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: white;
+}
+
+.top-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#clearAll {
+  background-color: #ffffff;
+  color: #333;
+  flex: 1;
+}
+
+.input-area {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input {
+  flex: 1;
+  padding: 12px;
+  border: 2px solid #ffffff;
+  border-radius: 8px;
+  outline: none;
+  color: #ffffff;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+input:focus {
+  border-color: #0098FF; /* Verde estilo streaming */
+}
+
+button {
+  padding: 12px 18px;
+  border: none;
+  background-color: #0098FF; /* Cor principal */
+  color: white;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+ul {
+  list-style: none;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+li {
+  background-color: #f7f9fa;
+  padding: 14px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-left: 4px solid #0098FF;
+  transition: 0.2s;
+}
+
+li span {
+  cursor: pointer;
+  flex: 1;
+  margin-right: 10px;
+  font-size: 15px;
+  transition: 0.2s;
+}
+
+li span:hover {
+  color: #0098FF;
+}
+
+.escutado {
+  
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.remove-btn {
+  background-color: #0098FF;
+  padding: 6px 12px;
+  font-size: 12px;
+}
